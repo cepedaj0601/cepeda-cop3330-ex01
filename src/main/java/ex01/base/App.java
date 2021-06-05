@@ -1,4 +1,7 @@
 package ex01.base;
+
+import java.util.Scanner;
+
 /*
  *  UCF COP3330 Summer 2021 Assignment 1 Solution
  *  Copyright 2021 first_name last_name
@@ -19,4 +22,12 @@ package ex01.base;
 
  */
 public class App {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("What is your name?");
+        String name = in.nextLine();
+
+        String outputString = "Hello, " + name + ", nice to meet you!";
+        System.out.println(outputString);
+    }
 }
